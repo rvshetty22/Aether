@@ -664,6 +664,31 @@ bool Inputs::get_do_calc_bulk_ion_temp() {
 }
 
 // -----------------------------------------------------------------------
+// Flag to check neutral and ions for nans and infinites
+// -----------------------------------------------------------------------
+
+bool Inputs::get_check_for_nans() {
+  return settings.at("Debug").at("check_for_nans");;
+}
+
+
+// -----------------------------------------------------------------------
+// Checks to see if nan_test is needed
+// -----------------------------------------------------------------------
+
+bool Inputs::get_nan_test() {
+  return settings.at("Debug").at("nan_test").at("test");
+}
+
+// -----------------------------------------------------------------------
+// Returns which variable is being tested for nans
+// -----------------------------------------------------------------------
+
+std::string Inputs::get_nan_test_variable() {
+  return settings.at("Debug").at("nan_test").at("variable");
+}
+
+// -----------------------------------------------------------------------
 //
 // -----------------------------------------------------------------------
 

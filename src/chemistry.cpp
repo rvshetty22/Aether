@@ -27,7 +27,6 @@ Chemistry::Chemistry(Neutrals neutrals,
   std::string function = "Chemistry::Chemistry";
   static int iFunction = -1;
   report.enter(function, iFunction);
-  std::cout << "here1";
   read_chemistry_file(neutrals, ions, args, report);
 
   report.exit(function);

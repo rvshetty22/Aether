@@ -320,6 +320,17 @@ class Neutrals {
   bool set_horizontal_bcs(int64_t iDir, Grid grid, Report &report);
   
   /**********************************************************************
+      \brief  Checks for nans and +/- infinities in density, temp, and velocity
+      \param report allow reporting to occur
+    **/
+  bool check_for_nonfinites(Report &report);
+
+  /**********************************************************************
+      \brief Checks for nans in the specified variable
+    **/
+  void nan_test(std::string variable);
+  
+  /**********************************************************************
      \brief Get the species ID number (int) given the species name (string)
      \param name string holding the species name (e.g., "O+")
      \param report allow reporting to occur

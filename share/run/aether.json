@@ -6,7 +6,12 @@
 
 	"Debug" : {
 	"iVerbose" : 0,
-	"dt" : 10.0},
+	"dt" : 10.0,
+	"check_for_nans" : true,
+	"nan_test" : {
+		"test" : true, 
+		"variable" : "temperature_scgc"}
+	},
 
     "GeoBlockSize" : {
 	"nLons" : 18,

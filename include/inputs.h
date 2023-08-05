@@ -45,9 +45,12 @@ public:
   int get_updated_seed();
   void set_seed(int seed);
   bool write_restart();
-  json get_perturb_values();  
-
+  json get_perturb_values(); 
+  bool get_check_for_nans();
+  bool get_nan_test();
+  std::string get_nan_test_variable();
   bool get_is_cubesphere();
+
 
   std::string get_student_name();
   bool get_is_student();

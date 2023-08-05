@@ -105,6 +105,9 @@ class Ions {
 		            Inputs input, Report &report);
   void calc_electron_temperature(Neutrals neutrals, Grid grid, Report &report);
   
+  bool check_for_nonfinites(Report &report);
+  void nan_test(std::string variable);
+
   bool restart_file(std::string dir, bool DoRead);
 };
 #endif  // INCLUDE_IONS_H_
